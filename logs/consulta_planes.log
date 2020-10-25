@@ -1,0 +1,1503 @@
+[2008nov17 14:45:23,761][INFO ][][configurarLogger BSSIntLogger.java:67][APLICACION: ConsultaPlanes - VERSION: 1.0]
+[2008nov17 14:45:23,776][INFO ][][configurarLogger BSSIntLogger.java:69][DESCRIPCION: Servicios de Integracion - Servicio de consulta de planes para la activación a través del IVR]
+[2008nov17 14:45:23,792][INFO ][1226933123792][doPost ConsultaPlanesServlet.java:57][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>584129531100</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 14:45:23,792][DEBUG][1226933123792][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Error_Message>
+		<Code>${Code}</Code>
+		<Message>${Message}</Message>
+	</Error_Message>
+</RTBS_ILCAS_OUT>]
+[2008nov17 14:45:23,792][DEBUG][1226933123792][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Error_Message>
+		<Code>]
+[2008nov17 14:45:23,807][DEBUG][1226933123792][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Code]
+[2008nov17 14:45:23,807][DEBUG][1226933123792][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Code>
+		<Message>]
+[2008nov17 14:45:23,807][DEBUG][1226933123792][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Message]
+[2008nov17 14:45:23,807][DEBUG][1226933123792][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Message>
+	</Error_Message>
+</RTBS_ILCAS_OUT>]
+[2008nov17 14:45:23,807][DEBUG][1226933123792][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<COS_Service>
+		<COS_Activate>
+			<cosName>Rumba Movil ZF</cosName>
+		</COS_Activate>
+		<COS_Activate>
+			<cosName>A tu Alcance 30 ZF</cosName>
+		</COS_Activate>
+	</COS_Service>
+</RTBS_ILCAS_OUT>]
+[2008nov17 14:45:23,807][DEBUG][1226933123792][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<COS_Service>
+		<COS_Activate>
+			<cosName>Rumba Movil ZF</cosName>
+		</COS_Activate>
+		<COS_Activate>
+			<cosName>A tu Alcance 30 ZF</cosName>
+		</COS_Activate>
+	</COS_Service>
+</RTBS_ILCAS_OUT>]
+[2008nov17 14:45:23,807][DEBUG][1226933123792][processRequest FCController.java:94][<?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>584129531100</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 14:45:23,823][DEBUG][1226933123792][buildRequest FCHelper.java:54][INICIO de parser XML de entrada]
+[2008nov17 14:45:24,292][DEBUG][1226933123792][processRequest FCController.java:154][Response: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT><COS_Service><COS_Activate><cosName>Rumba Movil ZF</cosName></COS_Activate><COS_Activate><cosName>A tu Alcance 30 ZF</cosName></COS_Activate></COS_Service></RTBS_ILCAS_OUT>
+]
+[2008nov17 14:45:24,292][INFO ][1226933123792][doPost ConsultaPlanesServlet.java:64][Response Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT><COS_Service><COS_Activate><cosName>Rumba Movil ZF</cosName></COS_Activate><COS_Activate><cosName>A tu Alcance 30 ZF</cosName></COS_Activate></COS_Service></RTBS_ILCAS_OUT>
+]
+[2008nov17 14:45:36,964][INFO ][1226933136964][doPost ConsultaPlanesServlet.java:57][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>58412953110</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 14:45:36,964][DEBUG][1226933136964][processRequest FCController.java:94][<?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>58412953110</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 14:45:36,979][DEBUG][1226933136964][buildRequest FCHelper.java:54][INICIO de parser XML de entrada]
+[2008nov17 14:45:36,979][ERROR][1226933136964][processRequest FCController.java:122][Codigo de Error: RTBS_ILCAS-OM0002 Mensaje de Error: Datos de entrada con formato errado]
+java.lang.IllegalArgumentException:  El valor asociado al MSISDN es incorrecto: 58412953110
+	at ve.com.digitel.consulta.planes.fc.FCHelper.validateInputParameters(FCHelper.java:99)
+	at ve.com.digitel.consulta.planes.fc.FCController.processRequest(FCController.java:118)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doPost(ConsultaPlanesServlet.java:61)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doGet(ConsultaPlanesServlet.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2008nov17 14:45:36,995][DEBUG][1226933136964][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2008nov17 14:45:36,995][INFO ][1226933136964][doPost ConsultaPlanesServlet.java:64][Response Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<COS_Service>
+		<COS_Activate>
+			<cosName>Rumba Movil ZF</cosName>
+		</COS_Activate>
+		<COS_Activate>
+			<cosName>A tu Alcance 30 ZF</cosName>
+		</COS_Activate>
+	</COS_Service>
+</RTBS_ILCAS_OUT>]
+[2008nov17 14:45:46,182][INFO ][1226933146182][doPost ConsultaPlanesServlet.java:57][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>5841295311</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 14:45:46,182][DEBUG][1226933146182][processRequest FCController.java:94][<?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>5841295311</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 14:45:46,198][DEBUG][1226933146182][buildRequest FCHelper.java:54][INICIO de parser XML de entrada]
+[2008nov17 14:45:46,198][ERROR][1226933146182][processRequest FCController.java:122][Codigo de Error: RTBS_ILCAS-OM0002 Mensaje de Error: Datos de entrada con formato errado]
+java.lang.IllegalArgumentException:  El valor asociado al MSISDN es incorrecto: 5841295311
+	at ve.com.digitel.consulta.planes.fc.FCHelper.validateInputParameters(FCHelper.java:99)
+	at ve.com.digitel.consulta.planes.fc.FCController.processRequest(FCController.java:118)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doPost(ConsultaPlanesServlet.java:61)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doGet(ConsultaPlanesServlet.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2008nov17 14:45:46,198][DEBUG][1226933146182][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2008nov17 14:45:46,198][INFO ][1226933146182][doPost ConsultaPlanesServlet.java:64][Response Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<COS_Service>
+		<COS_Activate>
+			<cosName>Rumba Movil ZF</cosName>
+		</COS_Activate>
+		<COS_Activate>
+			<cosName>A tu Alcance 30 ZF</cosName>
+		</COS_Activate>
+	</COS_Service>
+</RTBS_ILCAS_OUT>]
+[2008nov17 14:45:50,901][INFO ][1226933150901][doPost ConsultaPlanesServlet.java:57][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>58412953</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 14:45:50,901][DEBUG][1226933150901][processRequest FCController.java:94][<?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>58412953</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 14:45:50,901][DEBUG][1226933150901][buildRequest FCHelper.java:54][INICIO de parser XML de entrada]
+[2008nov17 14:45:50,901][ERROR][1226933150901][processRequest FCController.java:122][Codigo de Error: RTBS_ILCAS-OM0002 Mensaje de Error: Datos de entrada con formato errado]
+java.lang.IllegalArgumentException:  El valor asociado al MSISDN es incorrecto: 58412953
+	at ve.com.digitel.consulta.planes.fc.FCHelper.validateInputParameters(FCHelper.java:99)
+	at ve.com.digitel.consulta.planes.fc.FCController.processRequest(FCController.java:118)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doPost(ConsultaPlanesServlet.java:61)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doGet(ConsultaPlanesServlet.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2008nov17 14:45:50,917][DEBUG][1226933150901][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2008nov17 14:45:50,917][INFO ][1226933150901][doPost ConsultaPlanesServlet.java:64][Response Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<COS_Service>
+		<COS_Activate>
+			<cosName>Rumba Movil ZF</cosName>
+		</COS_Activate>
+		<COS_Activate>
+			<cosName>A tu Alcance 30 ZF</cosName>
+		</COS_Activate>
+	</COS_Service>
+</RTBS_ILCAS_OUT>]
+[2008nov17 14:48:24,776][INFO ][][configurarLogger BSSIntLogger.java:67][APLICACION: ConsultaPlanes - VERSION: 1.0]
+[2008nov17 14:48:24,807][INFO ][][configurarLogger BSSIntLogger.java:69][DESCRIPCION: Servicios de Integracion - Servicio de consulta de planes para la activación a través del IVR]
+[2008nov17 14:48:24,807][INFO ][1226933304807][doPost ConsultaPlanesServlet.java:57][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>58412953</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 14:48:24,932][DEBUG][1226933304807][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Error_Message>
+		<Code>${Code}</Code>
+		<Message>${Message}</Message>
+	</Error_Message>
+</RTBS_ILCAS_OUT>]
+[2008nov17 14:48:24,932][DEBUG][1226933304807][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Error_Message>
+		<Code>]
+[2008nov17 14:48:24,964][DEBUG][1226933304807][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Code]
+[2008nov17 14:48:25,026][DEBUG][1226933304807][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Code>
+		<Message>]
+[2008nov17 14:48:25,042][DEBUG][1226933304807][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Message]
+[2008nov17 14:48:25,057][DEBUG][1226933304807][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Message>
+	</Error_Message>
+</RTBS_ILCAS_OUT>]
+[2008nov17 14:48:25,057][DEBUG][1226933304807][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<COS_Service>
+		<COS_Activate>
+			<cosName>Rumba Movil ZF</cosName>
+		</COS_Activate>
+		<COS_Activate>
+			<cosName>A tu Alcance 30 ZF</cosName>
+		</COS_Activate>
+	</COS_Service>
+</RTBS_ILCAS_OUT>]
+[2008nov17 14:48:25,057][DEBUG][1226933304807][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<COS_Service>
+		<COS_Activate>
+			<cosName>Rumba Movil ZF</cosName>
+		</COS_Activate>
+		<COS_Activate>
+			<cosName>A tu Alcance 30 ZF</cosName>
+		</COS_Activate>
+	</COS_Service>
+</RTBS_ILCAS_OUT>]
+[2008nov17 14:48:40,167][DEBUG][1226933304807][processRequest FCController.java:94][<?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>58412953</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 14:48:42,245][DEBUG][1226933304807][buildRequest FCHelper.java:54][INICIO de parser XML de entrada]
+[2008nov17 14:48:54,229][ERROR][1226933304807][processRequest FCController.java:122][Codigo de Error: RTBS_ILCAS-OM0002 Mensaje de Error: Datos de entrada con formato errado]
+java.lang.IllegalArgumentException:  El valor asociado al MSISDN es incorrecto: 58412953
+	at ve.com.digitel.consulta.planes.fc.FCHelper.validateInputParameters(FCHelper.java:99)
+	at ve.com.digitel.consulta.planes.fc.FCController.processRequest(FCController.java:118)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doPost(ConsultaPlanesServlet.java:61)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doGet(ConsultaPlanesServlet.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2008nov17 14:49:00,354][DEBUG][1226933304807][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2008nov17 14:49:07,339][INFO ][1226933304807][doPost ConsultaPlanesServlet.java:64][Response Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<COS_Service>
+		<COS_Activate>
+			<cosName>Rumba Movil ZF</cosName>
+		</COS_Activate>
+		<COS_Activate>
+			<cosName>A tu Alcance 30 ZF</cosName>
+		</COS_Activate>
+	</COS_Service>
+</RTBS_ILCAS_OUT>]
+[2008nov17 14:49:41,073][INFO ][1226933381073][doPost ConsultaPlanesServlet.java:57][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>58412953</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 14:49:56,042][DEBUG][1226933381073][processRequest FCController.java:94][<?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>58412953</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 14:50:00,198][DEBUG][1226933381073][buildRequest FCHelper.java:54][INICIO de parser XML de entrada]
+[2008nov17 14:50:21,964][ERROR][1226933381073][processRequest FCController.java:122][Codigo de Error: RTBS_ILCAS-OM0002 Mensaje de Error: Datos de entrada con formato errado]
+java.lang.IllegalArgumentException:  El valor asociado al MSISDN es incorrecto: 58412953
+	at ve.com.digitel.consulta.planes.fc.FCHelper.validateInputParameters(FCHelper.java:99)
+	at ve.com.digitel.consulta.planes.fc.FCController.processRequest(FCController.java:118)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doPost(ConsultaPlanesServlet.java:61)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doGet(ConsultaPlanesServlet.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2008nov17 14:50:36,932][DEBUG][1226933381073][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2008nov17 14:58:15,339][INFO ][][configurarLogger BSSIntLogger.java:67][APLICACION: ConsultaPlanes - VERSION: 1.0]
+[2008nov17 14:58:15,354][INFO ][][configurarLogger BSSIntLogger.java:69][DESCRIPCION: Servicios de Integracion - Servicio de consulta de planes para la activación a través del IVR]
+[2008nov17 14:58:15,354][INFO ][1226933895354][doPost ConsultaPlanesServlet.java:57][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>58412953</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 14:58:15,417][DEBUG][1226933895354][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Error_Message>
+		<Code>${Code}</Code>
+		<Message>${Message}</Message>
+	</Error_Message>
+</RTBS_ILCAS_OUT>]
+[2008nov17 14:58:15,417][DEBUG][1226933895354][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Error_Message>
+		<Code>]
+[2008nov17 14:58:15,432][DEBUG][1226933895354][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Code]
+[2008nov17 14:58:15,432][DEBUG][1226933895354][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Code>
+		<Message>]
+[2008nov17 14:58:15,432][DEBUG][1226933895354][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Message]
+[2008nov17 14:58:15,432][DEBUG][1226933895354][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Message>
+	</Error_Message>
+</RTBS_ILCAS_OUT>]
+[2008nov17 14:58:15,448][DEBUG][1226933895354][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Operation_Message>
+		<Code>${Code}</Code>
+		<Message>${Message}</Message>
+	</Operation_Message>
+</RTBS_ILCAS_OUT>
+]
+[2008nov17 14:58:15,448][DEBUG][1226933895354][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Operation_Message>
+		<Code>]
+[2008nov17 14:58:15,448][DEBUG][1226933895354][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Code]
+[2008nov17 14:58:15,448][DEBUG][1226933895354][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Code>
+		<Message>]
+[2008nov17 14:58:15,448][DEBUG][1226933895354][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Message]
+[2008nov17 14:58:15,448][DEBUG][1226933895354][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Message>
+	</Operation_Message>
+</RTBS_ILCAS_OUT>
+]
+[2008nov17 14:58:19,792][INFO ][1226933381073][doPost ConsultaPlanesServlet.java:64][Response Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<COS_Service>
+		<COS_Activate>
+			<cosName>Rumba Movil ZF</cosName>
+		</COS_Activate>
+		<COS_Activate>
+			<cosName>A tu Alcance 30 ZF</cosName>
+		</COS_Activate>
+	</COS_Service>
+</RTBS_ILCAS_OUT>]
+[2008nov17 14:58:21,432][DEBUG][1226933895354][processRequest FCController.java:94][<?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>58412953</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 14:58:21,464][DEBUG][1226933895354][buildRequest FCHelper.java:54][INICIO de parser XML de entrada]
+[2008nov17 14:58:23,323][ERROR][1226933895354][processRequest FCController.java:122][Codigo de Error: RTBS_ILCAS-OM0002 Mensaje de Error: Datos de entrada con formato errado]
+java.lang.IllegalArgumentException:  El valor asociado al MSISDN es incorrecto: 58412953
+	at ve.com.digitel.consulta.planes.fc.FCHelper.validateInputParameters(FCHelper.java:99)
+	at ve.com.digitel.consulta.planes.fc.FCController.processRequest(FCController.java:118)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doPost(ConsultaPlanesServlet.java:61)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doGet(ConsultaPlanesServlet.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2008nov17 14:58:23,964][DEBUG][1226933895354][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2008nov17 14:58:23,964][INFO ][1226933895354][doPost ConsultaPlanesServlet.java:64][Response Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Operation_Message>
+		<Code>RTBS_ILCAS-OM0002</Code>
+		<Message>Datos de entrada con formato errado El valor asociado al MSISDN es incorrecto: 58412953</Message>
+	</Operation_Message>
+</RTBS_ILCAS_OUT>
+]
+[2008nov17 14:59:24,354][INFO ][][configurarLogger BSSIntLogger.java:67][APLICACION: ConsultaPlanes - VERSION: 1.0]
+[2008nov17 14:59:24,370][INFO ][][configurarLogger BSSIntLogger.java:69][DESCRIPCION: Servicios de Integracion - Servicio de consulta de planes para la activación a través del IVR]
+[2008nov17 14:59:24,370][INFO ][1226933964370][doPost ConsultaPlanesServlet.java:57][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>58412953</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 14:59:24,370][DEBUG][1226933964370][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Error_Message>
+		<Code>${Code}</Code>
+		<Message>${Message}</Message>
+	</Error_Message>
+</RTBS_ILCAS_OUT>]
+[2008nov17 14:59:24,370][DEBUG][1226933964370][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Error_Message>
+		<Code>]
+[2008nov17 14:59:24,386][DEBUG][1226933964370][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Code]
+[2008nov17 14:59:24,386][DEBUG][1226933964370][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Code>
+		<Message>]
+[2008nov17 14:59:24,386][DEBUG][1226933964370][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Message]
+[2008nov17 14:59:24,386][DEBUG][1226933964370][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Message>
+	</Error_Message>
+</RTBS_ILCAS_OUT>]
+[2008nov17 14:59:24,386][DEBUG][1226933964370][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Operation_Message>
+		<Code>${Code}</Code>
+		<Message>${Message}</Message>
+	</Operation_Message>
+</RTBS_ILCAS_OUT>
+]
+[2008nov17 14:59:24,386][DEBUG][1226933964370][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Operation_Message>
+		<Code>]
+[2008nov17 14:59:24,386][DEBUG][1226933964370][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Code]
+[2008nov17 14:59:24,386][DEBUG][1226933964370][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Code>
+		<Message>]
+[2008nov17 14:59:24,386][DEBUG][1226933964370][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Message]
+[2008nov17 14:59:24,386][DEBUG][1226933964370][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Message>
+	</Operation_Message>
+</RTBS_ILCAS_OUT>
+]
+[2008nov17 14:59:24,386][DEBUG][1226933964370][processRequest FCController.java:94][<?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>58412953</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 14:59:24,401][DEBUG][1226933964370][buildRequest FCHelper.java:54][INICIO de parser XML de entrada]
+[2008nov17 14:59:24,807][ERROR][1226933964370][processRequest FCController.java:122][Codigo de Error: RTBS_ILCAS-OM0002 Mensaje de Error: Datos de entrada con formato errado]
+java.lang.IllegalArgumentException:  El valor asociado al MSISDN es incorrecto: 58412953
+	at ve.com.digitel.consulta.planes.fc.FCHelper.validateInputParameters(FCHelper.java:99)
+	at ve.com.digitel.consulta.planes.fc.FCController.processRequest(FCController.java:118)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doPost(ConsultaPlanesServlet.java:61)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doGet(ConsultaPlanesServlet.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2008nov17 14:59:24,807][DEBUG][1226933964370][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2008nov17 14:59:24,807][INFO ][1226933964370][doPost ConsultaPlanesServlet.java:64][Response Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Operation_Message>
+		<Code>RTBS_ILCAS-OM0002</Code>
+		<Message>Datos de entrada con formato errado El valor asociado al MSISDN es incorrecto: 58412953</Message>
+	</Operation_Message>
+</RTBS_ILCAS_OUT>
+]
+[2008nov17 14:59:30,511][INFO ][1226933970511][doPost ConsultaPlanesServlet.java:57][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>5841295301</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 14:59:30,511][DEBUG][1226933970511][processRequest FCController.java:94][<?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>5841295301</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 14:59:30,511][DEBUG][1226933970511][buildRequest FCHelper.java:54][INICIO de parser XML de entrada]
+[2008nov17 14:59:30,511][ERROR][1226933970511][processRequest FCController.java:122][Codigo de Error: RTBS_ILCAS-OM0002 Mensaje de Error: Datos de entrada con formato errado]
+java.lang.IllegalArgumentException:  El valor asociado al MSISDN es incorrecto: 5841295301
+	at ve.com.digitel.consulta.planes.fc.FCHelper.validateInputParameters(FCHelper.java:99)
+	at ve.com.digitel.consulta.planes.fc.FCController.processRequest(FCController.java:118)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doPost(ConsultaPlanesServlet.java:61)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doGet(ConsultaPlanesServlet.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2008nov17 14:59:30,511][DEBUG][1226933970511][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2008nov17 14:59:30,511][INFO ][1226933970511][doPost ConsultaPlanesServlet.java:64][Response Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Operation_Message>
+		<Code>RTBS_ILCAS-OM0002</Code>
+		<Message>Datos de entrada con formato errado El valor asociado al MSISDN es incorrecto: 5841295301</Message>
+	</Operation_Message>
+</RTBS_ILCAS_OUT>
+]
+[2008nov17 14:59:33,370][INFO ][1226933973370][doPost ConsultaPlanesServlet.java:57][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>58412953011</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 14:59:33,370][DEBUG][1226933973370][processRequest FCController.java:94][<?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>58412953011</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 14:59:33,370][DEBUG][1226933973370][buildRequest FCHelper.java:54][INICIO de parser XML de entrada]
+[2008nov17 14:59:33,370][ERROR][1226933973370][processRequest FCController.java:122][Codigo de Error: RTBS_ILCAS-OM0002 Mensaje de Error: Datos de entrada con formato errado]
+java.lang.IllegalArgumentException:  El valor asociado al MSISDN es incorrecto: 58412953011
+	at ve.com.digitel.consulta.planes.fc.FCHelper.validateInputParameters(FCHelper.java:99)
+	at ve.com.digitel.consulta.planes.fc.FCController.processRequest(FCController.java:118)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doPost(ConsultaPlanesServlet.java:61)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doGet(ConsultaPlanesServlet.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2008nov17 14:59:33,370][DEBUG][1226933973370][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2008nov17 14:59:33,386][INFO ][1226933973370][doPost ConsultaPlanesServlet.java:64][Response Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Operation_Message>
+		<Code>RTBS_ILCAS-OM0002</Code>
+		<Message>Datos de entrada con formato errado El valor asociado al MSISDN es incorrecto: 58412953011</Message>
+	</Operation_Message>
+</RTBS_ILCAS_OUT>
+]
+[2008nov17 14:59:38,448][INFO ][1226933978448][doPost ConsultaPlanesServlet.java:57][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>584129530111</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 14:59:38,448][DEBUG][1226933978448][processRequest FCController.java:94][<?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>584129530111</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 14:59:38,448][DEBUG][1226933978448][buildRequest FCHelper.java:54][INICIO de parser XML de entrada]
+[2008nov17 14:59:38,526][DEBUG][1226933978448][processRequest FCController.java:154][Response: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT><COS_Service><COS_Activate><cosName>Rumba Movil ZF</cosName></COS_Activate><COS_Activate><cosName>A tu Alcance 30 ZF</cosName></COS_Activate></COS_Service></RTBS_ILCAS_OUT>
+]
+[2008nov17 14:59:38,526][INFO ][1226933978448][doPost ConsultaPlanesServlet.java:64][Response Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT><COS_Service><COS_Activate><cosName>Rumba Movil ZF</cosName></COS_Activate><COS_Activate><cosName>A tu Alcance 30 ZF</cosName></COS_Activate></COS_Service></RTBS_ILCAS_OUT>
+]
+[2008nov17 14:59:45,682][INFO ][1226933985682][doPost ConsultaPlanesServlet.java:57][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>58412953011a</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 14:59:45,682][DEBUG][1226933985682][processRequest FCController.java:94][<?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>58412953011a</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 14:59:45,682][DEBUG][1226933985682][buildRequest FCHelper.java:54][INICIO de parser XML de entrada]
+[2008nov17 14:59:45,682][DEBUG][1226933985682][processRequest FCController.java:154][Response: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT><COS_Service><COS_Activate><cosName>Rumba Movil ZF</cosName></COS_Activate><COS_Activate><cosName>A tu Alcance 30 ZF</cosName></COS_Activate></COS_Service></RTBS_ILCAS_OUT>
+]
+[2008nov17 14:59:45,682][INFO ][1226933985682][doPost ConsultaPlanesServlet.java:64][Response Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT><COS_Service><COS_Activate><cosName>Rumba Movil ZF</cosName></COS_Activate><COS_Activate><cosName>A tu Alcance 30 ZF</cosName></COS_Activate></COS_Service></RTBS_ILCAS_OUT>
+]
+[2008nov17 14:59:51,776][INFO ][1226933991776][doPost ConsultaPlanesServlet.java:57][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>58412953011a</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 14:59:51,776][DEBUG][1226933991776][processRequest FCController.java:94][<?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>58412953011a</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 14:59:51,776][DEBUG][1226933991776][buildRequest FCHelper.java:54][INICIO de parser XML de entrada]
+[2008nov17 14:59:51,792][DEBUG][1226933991776][processRequest FCController.java:154][Response: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT><COS_Service><COS_Activate><cosName>Rumba Movil ZF</cosName></COS_Activate><COS_Activate><cosName>A tu Alcance 30 ZF</cosName></COS_Activate></COS_Service></RTBS_ILCAS_OUT>
+]
+[2008nov17 14:59:51,792][INFO ][1226933991776][doPost ConsultaPlanesServlet.java:64][Response Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT><COS_Service><COS_Activate><cosName>Rumba Movil ZF</cosName></COS_Activate><COS_Activate><cosName>A tu Alcance 30 ZF</cosName></COS_Activate></COS_Service></RTBS_ILCAS_OUT>
+]
+[2008nov17 14:59:56,386][INFO ][1226933996386][doPost ConsultaPlanesServlet.java:57][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>58412953011A</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 14:59:56,386][DEBUG][1226933996386][processRequest FCController.java:94][<?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>58412953011A</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 14:59:56,386][DEBUG][1226933996386][buildRequest FCHelper.java:54][INICIO de parser XML de entrada]
+[2008nov17 14:59:56,386][DEBUG][1226933996386][processRequest FCController.java:154][Response: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT><COS_Service><COS_Activate><cosName>Rumba Movil ZF</cosName></COS_Activate><COS_Activate><cosName>A tu Alcance 30 ZF</cosName></COS_Activate></COS_Service></RTBS_ILCAS_OUT>
+]
+[2008nov17 14:59:56,386][INFO ][1226933996386][doPost ConsultaPlanesServlet.java:64][Response Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT><COS_Service><COS_Activate><cosName>Rumba Movil ZF</cosName></COS_Activate><COS_Activate><cosName>A tu Alcance 30 ZF</cosName></COS_Activate></COS_Service></RTBS_ILCAS_OUT>
+]
+[2008nov17 15:11:33,761][INFO ][][configurarLogger BSSIntLogger.java:67][APLICACION: ConsultaPlanes - VERSION: 1.0]
+[2008nov17 15:11:33,776][INFO ][][configurarLogger BSSIntLogger.java:69][DESCRIPCION: Servicios de Integracion - Servicio de consulta de planes para la activación a través del IVR]
+[2008nov17 15:11:33,776][INFO ][1226934693776][doPost ConsultaPlanesServlet.java:57][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>58412953011A</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 15:11:33,792][DEBUG][1226934693776][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Error_Message>
+		<Code>${Code}</Code>
+		<Message>${Message}</Message>
+	</Error_Message>
+</RTBS_ILCAS_OUT>]
+[2008nov17 15:11:33,792][DEBUG][1226934693776][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Error_Message>
+		<Code>]
+[2008nov17 15:11:33,792][DEBUG][1226934693776][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Code]
+[2008nov17 15:11:33,792][DEBUG][1226934693776][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Code>
+		<Message>]
+[2008nov17 15:11:33,792][DEBUG][1226934693776][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Message]
+[2008nov17 15:11:33,792][DEBUG][1226934693776][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Message>
+	</Error_Message>
+</RTBS_ILCAS_OUT>]
+[2008nov17 15:11:33,792][DEBUG][1226934693776][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Operation_Message>
+		<Code>${Code}</Code>
+		<Message>${Message}</Message>
+	</Operation_Message>
+</RTBS_ILCAS_OUT>
+]
+[2008nov17 15:11:33,792][DEBUG][1226934693776][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Operation_Message>
+		<Code>]
+[2008nov17 15:11:33,792][DEBUG][1226934693776][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Code]
+[2008nov17 15:11:33,792][DEBUG][1226934693776][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Code>
+		<Message>]
+[2008nov17 15:11:33,792][DEBUG][1226934693776][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Message]
+[2008nov17 15:11:33,792][DEBUG][1226934693776][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Message>
+	</Operation_Message>
+</RTBS_ILCAS_OUT>
+]
+[2008nov17 15:11:33,807][DEBUG][1226934693776][processRequest FCController.java:94][<?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>58412953011A</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 15:11:33,807][DEBUG][1226934693776][buildRequest FCHelper.java:54][INICIO de parser XML de entrada]
+[2008nov17 15:11:34,245][ERROR][1226934693776][processRequest FCController.java:122][Codigo de Error: RTBS_ILCAS-OM0002 Mensaje de Error: Datos de entrada con formato errado]
+java.util.regex.PatternSyntaxException: Illegal repetition
+{digit}
+	at java.util.regex.Pattern.error(Pattern.java:1541)
+	at java.util.regex.Pattern.closure(Pattern.java:2558)
+	at java.util.regex.Pattern.sequence(Pattern.java:1669)
+	at java.util.regex.Pattern.expr(Pattern.java:1558)
+	at java.util.regex.Pattern.compile(Pattern.java:1291)
+	at java.util.regex.Pattern.<init>(Pattern.java:1047)
+	at java.util.regex.Pattern.compile(Pattern.java:785)
+	at java.util.regex.Pattern.matches(Pattern.java:875)
+	at java.lang.String.matches(String.java:1597)
+	at ve.com.digitel.consulta.planes.fc.FCHelper.isNumeric(FCHelper.java:114)
+	at ve.com.digitel.consulta.planes.fc.FCHelper.validateInputParameters(FCHelper.java:97)
+	at ve.com.digitel.consulta.planes.fc.FCController.processRequest(FCController.java:118)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doPost(ConsultaPlanesServlet.java:61)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doGet(ConsultaPlanesServlet.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2008nov17 15:11:34,245][DEBUG][1226934693776][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2008nov17 15:11:34,245][INFO ][1226934693776][doPost ConsultaPlanesServlet.java:64][Response Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Operation_Message>
+		<Code>RTBS_ILCAS-OM0002</Code>
+		<Message>Datos de entrada con formato erradoIllegal repetition
+{digit}</Message>
+	</Operation_Message>
+</RTBS_ILCAS_OUT>
+]
+[2008nov17 15:12:46,854][INFO ][][configurarLogger BSSIntLogger.java:67][APLICACION: ConsultaPlanes - VERSION: 1.0]
+[2008nov17 15:12:46,886][INFO ][][configurarLogger BSSIntLogger.java:69][DESCRIPCION: Servicios de Integracion - Servicio de consulta de planes para la activación a través del IVR]
+[2008nov17 15:12:46,886][INFO ][1226934766886][doPost ConsultaPlanesServlet.java:57][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>58412953011A</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 15:12:46,886][DEBUG][1226934766886][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Error_Message>
+		<Code>${Code}</Code>
+		<Message>${Message}</Message>
+	</Error_Message>
+</RTBS_ILCAS_OUT>]
+[2008nov17 15:12:46,886][DEBUG][1226934766886][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Error_Message>
+		<Code>]
+[2008nov17 15:12:46,901][DEBUG][1226934766886][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Code]
+[2008nov17 15:12:46,901][DEBUG][1226934766886][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Code>
+		<Message>]
+[2008nov17 15:12:46,901][DEBUG][1226934766886][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Message]
+[2008nov17 15:12:46,901][DEBUG][1226934766886][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Message>
+	</Error_Message>
+</RTBS_ILCAS_OUT>]
+[2008nov17 15:12:46,901][DEBUG][1226934766886][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Operation_Message>
+		<Code>${Code}</Code>
+		<Message>${Message}</Message>
+	</Operation_Message>
+</RTBS_ILCAS_OUT>
+]
+[2008nov17 15:12:46,901][DEBUG][1226934766886][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Operation_Message>
+		<Code>]
+[2008nov17 15:12:46,901][DEBUG][1226934766886][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Code]
+[2008nov17 15:12:46,917][DEBUG][1226934766886][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Code>
+		<Message>]
+[2008nov17 15:12:46,917][DEBUG][1226934766886][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Message]
+[2008nov17 15:12:46,917][DEBUG][1226934766886][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Message>
+	</Operation_Message>
+</RTBS_ILCAS_OUT>
+]
+[2008nov17 15:12:46,917][DEBUG][1226934766886][processRequest FCController.java:94][<?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>58412953011A</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 15:12:46,917][DEBUG][1226934766886][buildRequest FCHelper.java:54][INICIO de parser XML de entrada]
+[2008nov17 15:12:47,526][ERROR][1226934766886][processRequest FCController.java:122][Codigo de Error: RTBS_ILCAS-OM0002 Mensaje de Error: Datos de entrada con formato errado]
+java.lang.IllegalArgumentException:  El valor asociado al MSISDN es incorrecto: 58412953011A
+	at ve.com.digitel.consulta.planes.fc.FCHelper.validateInputParameters(FCHelper.java:105)
+	at ve.com.digitel.consulta.planes.fc.FCController.processRequest(FCController.java:118)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doPost(ConsultaPlanesServlet.java:61)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doGet(ConsultaPlanesServlet.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2008nov17 15:12:47,542][DEBUG][1226934766886][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2008nov17 15:12:47,542][INFO ][1226934766886][doPost ConsultaPlanesServlet.java:64][Response Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Operation_Message>
+		<Code>RTBS_ILCAS-OM0002</Code>
+		<Message>Datos de entrada con formato errado El valor asociado al MSISDN es incorrecto: 58412953011A</Message>
+	</Operation_Message>
+</RTBS_ILCAS_OUT>
+]
+[2008nov17 15:13:03,261][INFO ][1226934783261][doPost ConsultaPlanesServlet.java:57][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>584129530111</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 15:13:03,261][DEBUG][1226934783261][processRequest FCController.java:94][<?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>584129530111</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 15:13:03,261][DEBUG][1226934783261][buildRequest FCHelper.java:54][INICIO de parser XML de entrada]
+[2008nov17 15:13:03,261][ERROR][1226934783261][processRequest FCController.java:122][Codigo de Error: RTBS_ILCAS-OM0002 Mensaje de Error: Datos de entrada con formato errado]
+java.lang.IllegalArgumentException:  El valor asociado al MSISDN es incorrecto: 584129530111
+	at ve.com.digitel.consulta.planes.fc.FCHelper.validateInputParameters(FCHelper.java:105)
+	at ve.com.digitel.consulta.planes.fc.FCController.processRequest(FCController.java:118)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doPost(ConsultaPlanesServlet.java:61)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doGet(ConsultaPlanesServlet.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2008nov17 15:13:03,276][DEBUG][1226934783261][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2008nov17 15:13:03,276][INFO ][1226934783261][doPost ConsultaPlanesServlet.java:64][Response Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Operation_Message>
+		<Code>RTBS_ILCAS-OM0002</Code>
+		<Message>Datos de entrada con formato errado El valor asociado al MSISDN es incorrecto: 584129530111</Message>
+	</Operation_Message>
+</RTBS_ILCAS_OUT>
+]
+[2008nov17 15:13:26,089][INFO ][1226934806089][doPost ConsultaPlanesServlet.java:57][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>58412953011</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 15:13:26,089][DEBUG][1226934806089][processRequest FCController.java:94][<?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>58412953011</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 15:13:26,089][DEBUG][1226934806089][buildRequest FCHelper.java:54][INICIO de parser XML de entrada]
+[2008nov17 15:13:26,104][ERROR][1226934806089][processRequest FCController.java:122][Codigo de Error: RTBS_ILCAS-OM0002 Mensaje de Error: Datos de entrada con formato errado]
+java.lang.IllegalArgumentException:  El valor asociado al MSISDN es incorrecto: 58412953011
+	at ve.com.digitel.consulta.planes.fc.FCHelper.validateInputParameters(FCHelper.java:105)
+	at ve.com.digitel.consulta.planes.fc.FCController.processRequest(FCController.java:118)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doPost(ConsultaPlanesServlet.java:61)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doGet(ConsultaPlanesServlet.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2008nov17 15:13:26,104][DEBUG][1226934806089][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2008nov17 15:13:26,104][INFO ][1226934806089][doPost ConsultaPlanesServlet.java:64][Response Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Operation_Message>
+		<Code>RTBS_ILCAS-OM0002</Code>
+		<Message>Datos de entrada con formato errado El valor asociado al MSISDN es incorrecto: 58412953011</Message>
+	</Operation_Message>
+</RTBS_ILCAS_OUT>
+]
+[2008nov17 15:13:31,886][INFO ][1226934811886][doPost ConsultaPlanesServlet.java:57][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>584</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 15:13:31,886][DEBUG][1226934811886][processRequest FCController.java:94][<?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>584</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 15:13:31,886][DEBUG][1226934811886][buildRequest FCHelper.java:54][INICIO de parser XML de entrada]
+[2008nov17 15:13:31,901][ERROR][1226934811886][processRequest FCController.java:122][Codigo de Error: RTBS_ILCAS-OM0002 Mensaje de Error: Datos de entrada con formato errado]
+java.lang.IllegalArgumentException:  El valor asociado al MSISDN es incorrecto: 584
+	at ve.com.digitel.consulta.planes.fc.FCHelper.validateInputParameters(FCHelper.java:105)
+	at ve.com.digitel.consulta.planes.fc.FCController.processRequest(FCController.java:118)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doPost(ConsultaPlanesServlet.java:61)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doGet(ConsultaPlanesServlet.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2008nov17 15:13:31,901][DEBUG][1226934811886][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2008nov17 15:13:31,901][INFO ][1226934811886][doPost ConsultaPlanesServlet.java:64][Response Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Operation_Message>
+		<Code>RTBS_ILCAS-OM0002</Code>
+		<Message>Datos de entrada con formato errado El valor asociado al MSISDN es incorrecto: 584</Message>
+	</Operation_Message>
+</RTBS_ILCAS_OUT>
+]
+[2008nov17 15:13:41,698][INFO ][1226934821698][doPost ConsultaPlanesServlet.java:57][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>584129530111</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 15:13:41,714][DEBUG][1226934821698][processRequest FCController.java:94][<?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>584129530111</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 15:13:41,714][DEBUG][1226934821698][buildRequest FCHelper.java:54][INICIO de parser XML de entrada]
+[2008nov17 15:13:41,714][ERROR][1226934821698][processRequest FCController.java:122][Codigo de Error: RTBS_ILCAS-OM0002 Mensaje de Error: Datos de entrada con formato errado]
+java.lang.IllegalArgumentException:  El valor asociado al MSISDN es incorrecto: 584129530111
+	at ve.com.digitel.consulta.planes.fc.FCHelper.validateInputParameters(FCHelper.java:105)
+	at ve.com.digitel.consulta.planes.fc.FCController.processRequest(FCController.java:118)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doPost(ConsultaPlanesServlet.java:61)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doGet(ConsultaPlanesServlet.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2008nov17 15:13:41,729][DEBUG][1226934821698][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2008nov17 15:13:41,729][INFO ][1226934821698][doPost ConsultaPlanesServlet.java:64][Response Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Operation_Message>
+		<Code>RTBS_ILCAS-OM0002</Code>
+		<Message>Datos de entrada con formato errado El valor asociado al MSISDN es incorrecto: 584129530111</Message>
+	</Operation_Message>
+</RTBS_ILCAS_OUT>
+]
+[2008nov17 15:13:48,917][INFO ][1226934828917][doPost ConsultaPlanesServlet.java:57][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>584129530111</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 15:13:48,917][DEBUG][1226934828917][processRequest FCController.java:94][<?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>584129530111</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 15:13:48,917][DEBUG][1226934828917][buildRequest FCHelper.java:54][INICIO de parser XML de entrada]
+[2008nov17 15:13:48,932][ERROR][1226934828917][processRequest FCController.java:122][Codigo de Error: RTBS_ILCAS-OM0002 Mensaje de Error: Datos de entrada con formato errado]
+java.lang.IllegalArgumentException:  El valor asociado al MSISDN es incorrecto: 584129530111
+	at ve.com.digitel.consulta.planes.fc.FCHelper.validateInputParameters(FCHelper.java:105)
+	at ve.com.digitel.consulta.planes.fc.FCController.processRequest(FCController.java:118)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doPost(ConsultaPlanesServlet.java:61)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doGet(ConsultaPlanesServlet.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2008nov17 15:13:48,932][DEBUG][1226934828917][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2008nov17 15:13:48,932][INFO ][1226934828917][doPost ConsultaPlanesServlet.java:64][Response Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Operation_Message>
+		<Code>RTBS_ILCAS-OM0002</Code>
+		<Message>Datos de entrada con formato errado El valor asociado al MSISDN es incorrecto: 584129530111</Message>
+	</Operation_Message>
+</RTBS_ILCAS_OUT>
+]
+[2008nov17 15:18:02,026][INFO ][][configurarLogger BSSIntLogger.java:67][APLICACION: ConsultaPlanes - VERSION: 1.0]
+[2008nov17 15:18:02,042][INFO ][][configurarLogger BSSIntLogger.java:69][DESCRIPCION: Servicios de Integracion - Servicio de consulta de planes para la activación a través del IVR]
+[2008nov17 15:18:02,042][INFO ][1226935082042][doPost ConsultaPlanesServlet.java:57][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>584129530111</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 15:18:02,042][DEBUG][1226935082042][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Error_Message>
+		<Code>${Code}</Code>
+		<Message>${Message}</Message>
+	</Error_Message>
+</RTBS_ILCAS_OUT>]
+[2008nov17 15:18:02,042][DEBUG][1226935082042][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Error_Message>
+		<Code>]
+[2008nov17 15:18:02,057][DEBUG][1226935082042][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Code]
+[2008nov17 15:18:02,057][DEBUG][1226935082042][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Code>
+		<Message>]
+[2008nov17 15:18:02,057][DEBUG][1226935082042][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Message]
+[2008nov17 15:18:02,057][DEBUG][1226935082042][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Message>
+	</Error_Message>
+</RTBS_ILCAS_OUT>]
+[2008nov17 15:18:02,057][DEBUG][1226935082042][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Operation_Message>
+		<Code>${Code}</Code>
+		<Message>${Message}</Message>
+	</Operation_Message>
+</RTBS_ILCAS_OUT>
+]
+[2008nov17 15:18:02,057][DEBUG][1226935082042][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Operation_Message>
+		<Code>]
+[2008nov17 15:18:02,057][DEBUG][1226935082042][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Code]
+[2008nov17 15:18:02,057][DEBUG][1226935082042][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Code>
+		<Message>]
+[2008nov17 15:18:02,057][DEBUG][1226935082042][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Message]
+[2008nov17 15:18:02,057][DEBUG][1226935082042][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Message>
+	</Operation_Message>
+</RTBS_ILCAS_OUT>
+]
+[2008nov17 15:18:02,073][DEBUG][1226935082042][processRequest FCController.java:94][<?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>584129530111</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 15:18:02,073][DEBUG][1226935082042][buildRequest FCHelper.java:56][INICIO de parser XML de entrada]
+[2008nov17 15:18:02,464][ERROR][1226935082042][processRequest FCController.java:122][Codigo de Error: RTBS_ILCAS-OM0002 Mensaje de Error: Datos de entrada con formato errado]
+java.lang.IllegalArgumentException:  El valor asociado al MSISDN es incorrecto: 584129530111
+	at ve.com.digitel.consulta.planes.fc.FCHelper.validateInputParameters(FCHelper.java:107)
+	at ve.com.digitel.consulta.planes.fc.FCController.processRequest(FCController.java:118)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doPost(ConsultaPlanesServlet.java:61)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doGet(ConsultaPlanesServlet.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2008nov17 15:18:02,479][DEBUG][1226935082042][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2008nov17 15:18:02,479][INFO ][1226935082042][doPost ConsultaPlanesServlet.java:64][Response Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Operation_Message>
+		<Code>RTBS_ILCAS-OM0002</Code>
+		<Message>Datos de entrada con formato errado El valor asociado al MSISDN es incorrecto: 584129530111</Message>
+	</Operation_Message>
+</RTBS_ILCAS_OUT>
+]
+[2008nov17 15:20:08,229][INFO ][][configurarLogger BSSIntLogger.java:67][APLICACION: ConsultaPlanes - VERSION: 1.0]
+[2008nov17 15:20:08,245][INFO ][][configurarLogger BSSIntLogger.java:69][DESCRIPCION: Servicios de Integracion - Servicio de consulta de planes para la activación a través del IVR]
+[2008nov17 15:20:08,245][INFO ][1226935208245][doPost ConsultaPlanesServlet.java:57][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>584129530111</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 15:20:08,261][DEBUG][1226935208245][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Error_Message>
+		<Code>${Code}</Code>
+		<Message>${Message}</Message>
+	</Error_Message>
+</RTBS_ILCAS_OUT>]
+[2008nov17 15:20:08,261][DEBUG][1226935208245][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Error_Message>
+		<Code>]
+[2008nov17 15:20:08,261][DEBUG][1226935208245][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Code]
+[2008nov17 15:20:08,276][DEBUG][1226935208245][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Code>
+		<Message>]
+[2008nov17 15:20:08,276][DEBUG][1226935208245][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Message]
+[2008nov17 15:20:08,276][DEBUG][1226935208245][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Message>
+	</Error_Message>
+</RTBS_ILCAS_OUT>]
+[2008nov17 15:20:08,276][DEBUG][1226935208245][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Operation_Message>
+		<Code>${Code}</Code>
+		<Message>${Message}</Message>
+	</Operation_Message>
+</RTBS_ILCAS_OUT>
+]
+[2008nov17 15:20:08,276][DEBUG][1226935208245][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Operation_Message>
+		<Code>]
+[2008nov17 15:20:08,276][DEBUG][1226935208245][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Code]
+[2008nov17 15:20:08,276][DEBUG][1226935208245][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Code>
+		<Message>]
+[2008nov17 15:20:08,276][DEBUG][1226935208245][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Message]
+[2008nov17 15:20:08,276][DEBUG][1226935208245][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Message>
+	</Operation_Message>
+</RTBS_ILCAS_OUT>
+]
+[2008nov17 15:20:08,276][DEBUG][1226935208245][processRequest FCController.java:94][<?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>584129530111</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 15:20:08,276][DEBUG][1226935208245][buildRequest FCHelper.java:56][INICIO de parser XML de entrada]
+[2008nov17 15:20:08,714][ERROR][1226935208245][processRequest FCController.java:122][Codigo de Error: RTBS_ILCAS-OM0002 Mensaje de Error: Datos de entrada con formato errado]
+java.lang.IllegalArgumentException:  El valor asociado al MSISDN es incorrecto: 584129530111
+	at ve.com.digitel.consulta.planes.fc.FCHelper.validateInputParameters(FCHelper.java:107)
+	at ve.com.digitel.consulta.planes.fc.FCController.processRequest(FCController.java:118)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doPost(ConsultaPlanesServlet.java:61)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doGet(ConsultaPlanesServlet.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2008nov17 15:20:08,714][DEBUG][1226935208245][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2008nov17 15:20:08,714][INFO ][1226935208245][doPost ConsultaPlanesServlet.java:64][Response Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Operation_Message>
+		<Code>RTBS_ILCAS-OM0002</Code>
+		<Message>Datos de entrada con formato errado El valor asociado al MSISDN es incorrecto: 584129530111</Message>
+	</Operation_Message>
+</RTBS_ILCAS_OUT>
+]
+[2008nov17 15:21:27,354][INFO ][][configurarLogger BSSIntLogger.java:67][APLICACION: ConsultaPlanes - VERSION: 1.0]
+[2008nov17 15:21:27,370][INFO ][][configurarLogger BSSIntLogger.java:69][DESCRIPCION: Servicios de Integracion - Servicio de consulta de planes para la activación a través del IVR]
+[2008nov17 15:21:27,370][INFO ][1226935287370][doPost ConsultaPlanesServlet.java:57][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>584129530111</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 15:21:27,386][DEBUG][1226935287370][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Error_Message>
+		<Code>${Code}</Code>
+		<Message>${Message}</Message>
+	</Error_Message>
+</RTBS_ILCAS_OUT>]
+[2008nov17 15:21:27,386][DEBUG][1226935287370][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Error_Message>
+		<Code>]
+[2008nov17 15:21:27,386][DEBUG][1226935287370][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Code]
+[2008nov17 15:21:27,401][DEBUG][1226935287370][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Code>
+		<Message>]
+[2008nov17 15:21:27,401][DEBUG][1226935287370][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Message]
+[2008nov17 15:21:27,401][DEBUG][1226935287370][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Message>
+	</Error_Message>
+</RTBS_ILCAS_OUT>]
+[2008nov17 15:21:27,401][DEBUG][1226935287370][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Operation_Message>
+		<Code>${Code}</Code>
+		<Message>${Message}</Message>
+	</Operation_Message>
+</RTBS_ILCAS_OUT>
+]
+[2008nov17 15:21:27,401][DEBUG][1226935287370][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Operation_Message>
+		<Code>]
+[2008nov17 15:21:27,401][DEBUG][1226935287370][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Code]
+[2008nov17 15:21:27,401][DEBUG][1226935287370][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Code>
+		<Message>]
+[2008nov17 15:21:27,401][DEBUG][1226935287370][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Message]
+[2008nov17 15:21:27,401][DEBUG][1226935287370][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Message>
+	</Operation_Message>
+</RTBS_ILCAS_OUT>
+]
+[2008nov17 15:21:27,401][DEBUG][1226935287370][processRequest FCController.java:94][<?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>584129530111</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 15:21:27,401][DEBUG][1226935287370][buildRequest FCHelper.java:56][INICIO de parser XML de entrada]
+[2008nov17 15:21:27,854][ERROR][1226935287370][processRequest FCController.java:122][Codigo de Error: RTBS_ILCAS-OM0002 Mensaje de Error: Datos de entrada con formato errado]
+java.lang.IllegalArgumentException:  El valor asociado al MSISDN es incorrecto: 584129530111
+	at ve.com.digitel.consulta.planes.fc.FCHelper.validateInputParameters(FCHelper.java:107)
+	at ve.com.digitel.consulta.planes.fc.FCController.processRequest(FCController.java:118)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doPost(ConsultaPlanesServlet.java:61)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doGet(ConsultaPlanesServlet.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2008nov17 15:21:27,870][DEBUG][1226935287370][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2008nov17 15:21:27,886][INFO ][1226935287370][doPost ConsultaPlanesServlet.java:64][Response Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Operation_Message>
+		<Code>RTBS_ILCAS-OM0002</Code>
+		<Message>Datos de entrada con formato errado El valor asociado al MSISDN es incorrecto: 584129530111</Message>
+	</Operation_Message>
+</RTBS_ILCAS_OUT>
+]
+[2008nov17 15:24:58,807][INFO ][][configurarLogger BSSIntLogger.java:67][APLICACION: ConsultaPlanes - VERSION: 1.0]
+[2008nov17 15:24:58,807][INFO ][][configurarLogger BSSIntLogger.java:69][DESCRIPCION: Servicios de Integracion - Servicio de consulta de planes para la activación a través del IVR]
+[2008nov17 15:24:58,807][INFO ][1226935498807][doPost ConsultaPlanesServlet.java:57][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>584129530111</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 15:24:58,823][DEBUG][1226935498807][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Error_Message>
+		<Code>${Code}</Code>
+		<Message>${Message}</Message>
+	</Error_Message>
+</RTBS_ILCAS_OUT>]
+[2008nov17 15:24:58,823][DEBUG][1226935498807][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Error_Message>
+		<Code>]
+[2008nov17 15:24:58,823][DEBUG][1226935498807][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Code]
+[2008nov17 15:24:58,823][DEBUG][1226935498807][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Code>
+		<Message>]
+[2008nov17 15:24:58,823][DEBUG][1226935498807][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Message]
+[2008nov17 15:24:58,839][DEBUG][1226935498807][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Message>
+	</Error_Message>
+</RTBS_ILCAS_OUT>]
+[2008nov17 15:24:58,839][DEBUG][1226935498807][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Operation_Message>
+		<Code>${Code}</Code>
+		<Message>${Message}</Message>
+	</Operation_Message>
+</RTBS_ILCAS_OUT>
+]
+[2008nov17 15:24:58,839][DEBUG][1226935498807][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Operation_Message>
+		<Code>]
+[2008nov17 15:24:58,839][DEBUG][1226935498807][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Code]
+[2008nov17 15:24:58,839][DEBUG][1226935498807][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Code>
+		<Message>]
+[2008nov17 15:24:58,839][DEBUG][1226935498807][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Message]
+[2008nov17 15:24:58,839][DEBUG][1226935498807][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Message>
+	</Operation_Message>
+</RTBS_ILCAS_OUT>
+]
+[2008nov17 15:24:58,839][DEBUG][1226935498807][processRequest FCController.java:94][<?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>584129530111</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 15:24:58,839][DEBUG][1226935498807][buildRequest FCHelper.java:56][INICIO de parser XML de entrada]
+[2008nov17 15:24:59,339][DEBUG][1226935498807][processRequest FCController.java:154][Response: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT><COS_Service><COS_Activate><cosName>Rumba Movil ZF</cosName></COS_Activate><COS_Activate><cosName>A tu Alcance 30 ZF</cosName></COS_Activate></COS_Service></RTBS_ILCAS_OUT>
+]
+[2008nov17 15:24:59,339][INFO ][1226935498807][doPost ConsultaPlanesServlet.java:64][Response Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT><COS_Service><COS_Activate><cosName>Rumba Movil ZF</cosName></COS_Activate><COS_Activate><cosName>A tu Alcance 30 ZF</cosName></COS_Activate></COS_Service></RTBS_ILCAS_OUT>
+]
+[2008nov17 15:25:03,932][INFO ][1226935503932][doPost ConsultaPlanesServlet.java:57][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>58412953011</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 15:25:03,932][DEBUG][1226935503932][processRequest FCController.java:94][<?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>58412953011</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 15:25:03,932][DEBUG][1226935503932][buildRequest FCHelper.java:56][INICIO de parser XML de entrada]
+[2008nov17 15:25:03,948][ERROR][1226935503932][processRequest FCController.java:122][Codigo de Error: RTBS_ILCAS-OM0002 Mensaje de Error: Datos de entrada con formato errado]
+java.lang.IllegalArgumentException:  El valor asociado al MSISDN es incorrecto: 58412953011
+	at ve.com.digitel.consulta.planes.fc.FCHelper.validateInputParameters(FCHelper.java:101)
+	at ve.com.digitel.consulta.planes.fc.FCController.processRequest(FCController.java:118)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doPost(ConsultaPlanesServlet.java:61)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doGet(ConsultaPlanesServlet.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2008nov17 15:25:03,948][DEBUG][1226935503932][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2008nov17 15:25:03,948][INFO ][1226935503932][doPost ConsultaPlanesServlet.java:64][Response Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Operation_Message>
+		<Code>RTBS_ILCAS-OM0002</Code>
+		<Message>Datos de entrada con formato errado El valor asociado al MSISDN es incorrecto: 58412953011</Message>
+	</Operation_Message>
+</RTBS_ILCAS_OUT>
+]
+[2008nov17 15:25:07,401][INFO ][1226935507401][doPost ConsultaPlanesServlet.java:57][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>58412953011a</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 15:25:07,401][DEBUG][1226935507401][processRequest FCController.java:94][<?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>58412953011a</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 15:25:07,401][DEBUG][1226935507401][buildRequest FCHelper.java:56][INICIO de parser XML de entrada]
+[2008nov17 15:25:07,417][ERROR][1226935507401][processRequest FCController.java:122][Codigo de Error: RTBS_ILCAS-OM0002 Mensaje de Error: Datos de entrada con formato errado]
+java.lang.IllegalArgumentException:  El valor asociado al MSISDN es incorrecto: 58412953011a
+	at ve.com.digitel.consulta.planes.fc.FCHelper.validateInputParameters(FCHelper.java:107)
+	at ve.com.digitel.consulta.planes.fc.FCController.processRequest(FCController.java:118)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doPost(ConsultaPlanesServlet.java:61)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doGet(ConsultaPlanesServlet.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2008nov17 15:25:07,417][DEBUG][1226935507401][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2008nov17 15:25:07,417][INFO ][1226935507401][doPost ConsultaPlanesServlet.java:64][Response Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Operation_Message>
+		<Code>RTBS_ILCAS-OM0002</Code>
+		<Message>Datos de entrada con formato errado El valor asociado al MSISDN es incorrecto: 58412953011a</Message>
+	</Operation_Message>
+</RTBS_ILCAS_OUT>
+]
+[2008nov17 15:25:10,901][INFO ][1226935510901][doPost ConsultaPlanesServlet.java:57][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>aaa</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 15:25:10,901][DEBUG][1226935510901][processRequest FCController.java:94][<?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>aaa</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 15:25:10,901][DEBUG][1226935510901][buildRequest FCHelper.java:56][INICIO de parser XML de entrada]
+[2008nov17 15:25:10,901][ERROR][1226935510901][processRequest FCController.java:122][Codigo de Error: RTBS_ILCAS-OM0002 Mensaje de Error: Datos de entrada con formato errado]
+java.lang.IllegalArgumentException:  El valor asociado al MSISDN es incorrecto: aaa
+	at ve.com.digitel.consulta.planes.fc.FCHelper.validateInputParameters(FCHelper.java:107)
+	at ve.com.digitel.consulta.planes.fc.FCController.processRequest(FCController.java:118)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doPost(ConsultaPlanesServlet.java:61)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doGet(ConsultaPlanesServlet.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2008nov17 15:25:10,917][DEBUG][1226935510901][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2008nov17 15:25:10,917][INFO ][1226935510901][doPost ConsultaPlanesServlet.java:64][Response Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Operation_Message>
+		<Code>RTBS_ILCAS-OM0002</Code>
+		<Message>Datos de entrada con formato errado El valor asociado al MSISDN es incorrecto: aaa</Message>
+	</Operation_Message>
+</RTBS_ILCAS_OUT>
+]
+[2008nov17 15:25:17,714][INFO ][1226935517714][doPost ConsultaPlanesServlet.java:57][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>584129530111</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 15:25:17,714][DEBUG][1226935517714][processRequest FCController.java:94][<?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>584129530111</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 15:25:17,714][DEBUG][1226935517714][buildRequest FCHelper.java:56][INICIO de parser XML de entrada]
+[2008nov17 15:25:17,729][DEBUG][1226935517714][processRequest FCController.java:154][Response: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT><COS_Service><COS_Activate><cosName>Rumba Movil ZF</cosName></COS_Activate><COS_Activate><cosName>A tu Alcance 30 ZF</cosName></COS_Activate></COS_Service></RTBS_ILCAS_OUT>
+]
+[2008nov17 15:25:17,729][INFO ][1226935517714][doPost ConsultaPlanesServlet.java:64][Response Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT><COS_Service><COS_Activate><cosName>Rumba Movil ZF</cosName></COS_Activate><COS_Activate><cosName>A tu Alcance 30 ZF</cosName></COS_Activate></COS_Service></RTBS_ILCAS_OUT>
+]
+[2008nov17 15:25:21,464][INFO ][1226935521464][doPost ConsultaPlanesServlet.java:57][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>584129530111</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 15:25:21,464][DEBUG][1226935521464][processRequest FCController.java:94][<?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>584129530111</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 15:25:21,464][DEBUG][1226935521464][buildRequest FCHelper.java:56][INICIO de parser XML de entrada]
+[2008nov17 15:25:21,479][DEBUG][1226935521464][processRequest FCController.java:154][Response: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT><COS_Service><COS_Activate><cosName>Rumba Movil ZF</cosName></COS_Activate><COS_Activate><cosName>A tu Alcance 30 ZF</cosName></COS_Activate></COS_Service></RTBS_ILCAS_OUT>
+]
+[2008nov17 15:25:21,479][INFO ][1226935521464][doPost ConsultaPlanesServlet.java:64][Response Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT><COS_Service><COS_Activate><cosName>Rumba Movil ZF</cosName></COS_Activate><COS_Activate><cosName>A tu Alcance 30 ZF</cosName></COS_Activate></COS_Service></RTBS_ILCAS_OUT>
+]
+[2008nov17 15:25:25,307][INFO ][1226935525307][doPost ConsultaPlanesServlet.java:57][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>594129530111</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 15:25:25,307][DEBUG][1226935525307][processRequest FCController.java:94][<?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_IN>
+	<Channel>IVR</Channel>
+	<System>IVR</System>
+	<MSISDN>594129530111</MSISDN>
+</RTBS_ILCAS_IN>]
+[2008nov17 15:25:25,307][DEBUG][1226935525307][buildRequest FCHelper.java:56][INICIO de parser XML de entrada]
+[2008nov17 15:25:25,307][ERROR][1226935525307][processRequest FCController.java:122][Codigo de Error: RTBS_ILCAS-OM0002 Mensaje de Error: Datos de entrada con formato errado]
+java.lang.IllegalArgumentException:  El valor asociado al MSISDN es incorrecto: 594129530111
+	at ve.com.digitel.consulta.planes.fc.FCHelper.validateInputParameters(FCHelper.java:104)
+	at ve.com.digitel.consulta.planes.fc.FCController.processRequest(FCController.java:118)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doPost(ConsultaPlanesServlet.java:61)
+	at ve.com.digitel.consulta.planes.servlet.ConsultaPlanesServlet.doGet(ConsultaPlanesServlet.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2008nov17 15:25:25,323][DEBUG][1226935525307][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2008nov17 15:25:25,323][INFO ][1226935525307][doPost ConsultaPlanesServlet.java:64][Response Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Operation_Message>
+		<Code>RTBS_ILCAS-OM0002</Code>
+		<Message>Datos de entrada con formato errado El valor asociado al MSISDN es incorrecto: 594129530111</Message>
+	</Operation_Message>
+</RTBS_ILCAS_OUT>
+]

@@ -1,0 +1,7 @@
+# Archivo de configuracion de la aplicacion Manejador Balances RTBS
+
+# Servidor Weblogic
+application.initial_context_factory=weblogic.jndi.WLInitialContextFactory
+
+# IP y Puerto servidor weblogic
+application.provider_url=t3://localhost:7001

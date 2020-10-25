@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RTBS_ILCAS_OUT>
+	<Operation_Message>
+		<Code>${Code}</Code>
+		<Message>${Message}</Message>
+	</Operation_Message>
+</RTBS_ILCAS_OUT>
